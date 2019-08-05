@@ -15,13 +15,13 @@ Download_Souce_Code(){
 	}
 
 Download_image(){
-	docker login
+	sudo docker login
 	echo -e "\e[33mPull Python Base Image \e[0m";
-	docker pull arm32v7/python:3.5.7-stretch;
+	sudo docker pull arm32v7/python:3.5.7-stretch;
 	# Download image
 	echo -e "\e[33mDownload  python-mysql Base Image \e[0m"
-	docker pull mne124816/python-mysql;
-	docker tag mne124816/python-mysql python-mysql;
+	sudo docker pull mne124816/python-mysql;
+	sudo docker tag mne124816/python-mysql python-mysql;
 	}
 	
 Install_Docker(){
